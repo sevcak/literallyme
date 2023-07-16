@@ -62,5 +62,32 @@
     "name": "Ryan Gosling",
     "link": "https://en.wikipedia.org/wiki/Ryan_Gosling",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ryan_Gosling_in_2018.jpg/800px-Ryan_Gosling_in_2018.jpg"
+  },
+  {
+    "name": "Patrick Bateman",
+    "link": "https://en.wikipedia.org/wiki/Patrick_Bateman",
+    "img": "https://upload.wikimedia.org/wikipedia/en/5/52/American-psycho-patrick-bateman.jpg",
+    "from": {
+      "title": "American Psycho",
+      "link": "https://en.wikipedia.org/wiki/American_Psycho_(film)"
+    }
+  },
+  {
+    "name": "Thorfinn",
+    "link": "https://vinlandsaga.fandom.com/wiki/Thorfinn",
+    "img": "https://static.wikia.nocookie.net/vinlandsaga/images/7/7d/Thorfinn_S2_anime_design.png",
+    "from": {
+      "title": "Vinland Saga",
+      "link": "https://en.wikipedia.org/wiki/Vinland_Saga_(manga)"
+    }
+  },
+  {
+    "name": "Tyler Durden",
+    "link": "https://fightclub.fandom.com/wiki/Tyler_Durden",
+    "img": "https://static.wikia.nocookie.net/villains/images/7/7b/Tylerbetterpicture.jpg",
+    "from": {
+      "title": "Fight Club",
+      "link": "https://en.wikipedia.org/wiki/Fight_Club"
+    }
   }
 ]
