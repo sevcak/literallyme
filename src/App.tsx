@@ -17,7 +17,7 @@ interface Personality {
 const App = () => {
   const [personality, setPersonality] = useState<Personality | undefined>(undefined);
   const [isRolling, setIsRolling] = useState(false);
-  const [intervalDuration, setIntervalDuration] = useState(100); // Initial interval duration in milliseconds
+  const intervalDuration = 100; // Initial interval duration in milliseconds
 
   // set new personality state
   const newPersonality = () => {
