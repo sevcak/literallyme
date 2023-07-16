@@ -93,9 +93,21 @@ const App = () => {
           }
         </div>
       }
-    <p className='absolute bottom-8 text-sm'>
-      coded by <a href="https://github.com/sevcak" className='font-bold hover:underline underline-offset-4'>sevcak</a>
-    </p>
+      {
+          !isRolling &&
+          // Buttons
+          <div className='mt-10'>
+            <button
+              className='bg-gray-200 text-sm p-1 px-2'
+              onClick={() => setIsRolling(true)}
+            >
+              nuh uh?
+            </button>
+          </div>
+      }
+      <p className='absolute bottom-8 text-sm'>
+        coded by <a href="https://github.com/sevcak" className='font-bold hover:underline underline-offset-4'>sevcak</a>
+      </p>
     </div>
   );
 }
