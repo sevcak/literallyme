@@ -4,6 +4,7 @@ import personalities from './data/personalities.json';
 import { getRandomInt } from './utils/random';
 
 interface Personality {
+  id?: number,
   name: string,
   link: string,
   img: string,
@@ -15,14 +16,38 @@ interface Personality {
 
 const App = () => {
   const [personality, setPersonality] = useState<Personality | undefined>(undefined);
+  const [isRolling, setIsRolling] = useState(false);
+  const [intervalDuration, setIntervalDuration] = useState(100); // Initial interval duration in milliseconds
 
   const newPersonality = () => {
-    setPersonality(personalities[getRandomInt(0, personalities.length)]);
+    const newPersonalityId = getRandomInt(0, personalities.length, personality?.id || undefined);
+    setPersonality({
+      ...personalities[newPersonalityId],
+      id: newPersonalityId
+    });
   }
 
   useEffect(() => {
-    newPersonality();
-  });
+    // newPersonality();
+    setIsRolling(true);
+  }, []);
+
+  useEffect(() => {
+    if (isRolling) {
+      const intervalId = setInterval(newPersonality, intervalDuration);
+
+      // Gradually slow down the interval duration
+      const timeoutId = setTimeout(() => {
+        clearInterval(intervalId);
+        setIsRolling(false);
+      }, 5000); // Stop after 5 seconds
+
+      return () => {
+        clearInterval(intervalId);
+        clearTimeout(timeoutId);
+      };
+    }
+  }, [isRolling, intervalDuration]);
 
   return (
     <div
@@ -40,7 +65,7 @@ const App = () => {
             className='w-64 h-64 object-cover object-top rounded-lg'
           />
           {
-            personality.from &&
+            (!isRolling && personality.from) &&
             <div className='space-y-2'>
               <p>from</p>
               <h2>
