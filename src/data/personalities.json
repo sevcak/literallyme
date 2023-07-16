@@ -57,5 +57,10 @@
       "title": "AMC's The Walking Dead",
       "link": "https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)"
     }
+  },
+  {
+    "name": "Ryan Gosling",
+    "link": "https://en.wikipedia.org/wiki/Ryan_Gosling",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ryan_Gosling_in_2018.jpg/800px-Ryan_Gosling_in_2018.jpg"
   }
 ]
