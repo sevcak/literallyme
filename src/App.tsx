@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <div
-      className='w-screen min-h-screen flex flex-col p-6 md:pt-16 lg:pt-28 xl:pt-36 items-center text-center gap-4 text-2xl'
+      className='w-screen h-full min-h-screen flex flex-col p-6 pt-10 md:pt-16 lg:pt-20 xl:pt-24 items-center text-center gap-4 text-2xl'
     >
       <p>this month, you're literally:</p>
       {
@@ -94,11 +94,26 @@ const App = () => {
         </div>
       }
       {
-          !isRolling &&
+          (!isRolling && personality) &&
           // Buttons
-          <div className='mt-10'>
+          <div className='md:mt-4 flex flex-col items-center gap-4 md:gap-8'>
+            {/* Tweet button */}
+            <a
+              className='bg-gray-300 text-sm p-2 md:p-4 w-fit h-fit rounded-full'
+              href={
+                'https://twitter.com/intent/tweet?text='
+                + `I'm literally ${personality.name}`
+                + `${personality.from ? ` from ${personality.from.title}` : ''}`
+                + '.'
+                + '%0A---'
+                + '%0Asource:'
+                + '%0Asevcak.github.io/literallyme by @_sevcak'
+              }
+            >
+              <img className='w-4 h-4 md:w-8 md:h-8' src="./assets/twitter.svg" alt="Tweet" />
+            </a>
             <button
-              className='bg-gray-200 text-sm p-1 px-2'
+              className='bg-gray-300 text-sm p-1 px-2'
               onClick={() => setIsRolling(true)}
             >
               nuh uh?
