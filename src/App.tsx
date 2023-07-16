@@ -53,13 +53,13 @@ const App = () => {
 
   return (
     <div
-      className='w-screen h-screen flex flex-col p-6 md:pt-16 lg:pt-28 xl:pt-36 items-center text-center gap-2 text-2xl'
+      className='w-screen h-screen flex flex-col p-6 md:pt-16 lg:pt-28 xl:pt-36 items-center text-center gap-4 text-2xl'
     >
       <p>this month, you're literally:</p>
       {
         personality &&
         <div className={`flex flex-col gap-6 items-center ${isRolling ? 'scale-90' : ''} duration-200`}>
-          <h1>
+          <h1 className='max-sm:text-3xl max-sm:font-bold max-sm:-mx-4'>
             {
               isRolling
               ? <p>{personality.name}</p> 
@@ -86,7 +86,7 @@ const App = () => {
             (!isRolling && personality.from) &&
             <div className='space-y-2'>
               <p>from</p>
-              <h2>
+              <h2 className='max-sm:text-2xl max-sm:font-bold'>
                 <a href={personality.from.link}>{personality.from.title}</a>
               </h2>
             </div>
