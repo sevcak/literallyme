@@ -56,14 +56,30 @@ const App = () => {
       <p>this month, you're literally:</p>
       {
         personality &&
-        <div className='flex flex-col gap-6 items-center'>
+        <div className={`flex flex-col gap-6 items-center ${isRolling ? 'scale-90' : ''} duration-200`}>
           <h1>
-            <a href={personality.link}>{personality.name}</a>
+            {
+              isRolling
+              ? <p>{personality.name}</p> 
+              : <a href={personality.link}>{personality.name}</a>
+            }
           </h1>
-          <img
-            src={personality.img} alt={personality.name}
-            className='w-64 h-64 object-cover object-top rounded-lg'
-          />
+          {
+            isRolling
+            ? (
+              <img
+                src={personality.img} alt={personality.name}
+                className='w-64 h-64 object-cover object-top rounded-lg'
+              />
+            ) : (
+              <a href={personality.img} className='hover:brightness-150 hover:contrast-50'>
+              <img
+                src={personality.img} alt={personality.name}
+                className='w-64 h-64 object-cover object-top rounded-lg'
+              />
+              </a>
+            )
+          }
           {
             (!isRolling && personality.from) &&
             <div className='space-y-2'>
@@ -75,6 +91,9 @@ const App = () => {
           }
         </div>
       }
+    <p className='fixed bottom-8 text-sm'>
+      coded by <a href="https://github.com/sevcak" className='font-bold hover:underline underline-offset-4'>sevcak</a>
+    </p>
     </div>
   );
 }
