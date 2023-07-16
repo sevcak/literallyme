@@ -106,7 +106,7 @@ const App = () => {
             <a
               className='
                 bg-gray-300 text-sm p-2 md:p-4 w-fit h-fit rounded-full
-                hover:border-indigo-500 border duration-75
+                border border-gray-300 hover:border-indigo-500 duration-75
               '
               href={
                 'https://twitter.com/intent/tweet?text='
