@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <div
-      className='w-screen h-screen flex flex-col p-6 md:pt-16 lg:pt-28 xl:pt-36 items-center text-center gap-4 text-2xl'
+      className='w-screen min-h-screen flex flex-col p-6 md:pt-16 lg:pt-28 xl:pt-36 items-center text-center gap-4 text-2xl'
     >
       <p>this month, you're literally:</p>
       {
