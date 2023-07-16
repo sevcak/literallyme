@@ -129,7 +129,7 @@ const App = () => {
           </div>
         }
       </div>
-      <p className='text-sm p-2'>
+      <p className='text-sm p-2 mt-8'>
         coded by <a href="https://github.com/sevcak" className='font-bold hover:underline underline-offset-4'>sevcak</a>
       </p>
     </div>
