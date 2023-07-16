@@ -7,10 +7,19 @@
   {
     "name": "Robert Pattinson Batman",
     "link": "https://batman.fandom.com/wiki/Batman_(Reevesverse)",
-    "img": "https://static.wikia.nocookie.net/batman/images/d/d3/The_Batman_-_Batman.jpg/revision/latest?cb=20220201202711",
+    "img": "https://static.wikia.nocookie.net/batman/images/d/d3/The_Batman_-_Batman.jpg",
     "from": {
       "title": "The Batman (2022)",
       "link": "https://en.wikipedia.org/wiki/The_Batman_(film)"
     }
   },
+  {
+    "name": "James Sunderland",
+    "link": "https://silenthill.fandom.com/wiki/James_Sunderland",
+    "img": "https://static.wikia.nocookie.net/silent/images/d/dc/EDCF5B86-2385-45D0-BDAD-6962B1584F68.webp/",
+    "from": {
+      "title": "Silent Hill 2",
+      "link": "https://silenthill.fandom.com/wiki/Silent_Hill_2"
+    }
+  }
 ]
