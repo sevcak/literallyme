@@ -19,6 +19,7 @@ const App = () => {
   const [isRolling, setIsRolling] = useState(false);
   const [intervalDuration, setIntervalDuration] = useState(100); // Initial interval duration in milliseconds
 
+  // set new personality state
   const newPersonality = () => {
     const newPersonalityId = getRandomInt(0, personalities.length, personality?.id || undefined);
     setPersonality({
@@ -27,16 +28,17 @@ const App = () => {
     });
   }
 
+  // when component mounts, roll a personality
   useEffect(() => {
-    // newPersonality();
     setIsRolling(true);
   }, []);
 
+  // roll a new personality with visual jumps
   useEffect(() => {
     if (isRolling) {
       const intervalId = setInterval(newPersonality, intervalDuration);
 
-      // Gradually slow down the interval duration
+      // gradually slow down the interval duration
       const timeoutId = setTimeout(() => {
         clearInterval(intervalId);
         setIsRolling(false);
