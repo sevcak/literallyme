@@ -99,7 +99,10 @@ const App = () => {
           <div className='md:mt-4 flex flex-col items-center gap-4 md:gap-8'>
             {/* Tweet button */}
             <a
-              className='bg-gray-300 text-sm p-2 md:p-4 w-fit h-fit rounded-full'
+              className='
+                bg-gray-300 text-sm p-2 md:p-4 w-fit h-fit rounded-full
+                hover:border-indigo-500 border duration-75
+              '
               href={
                 'https://twitter.com/intent/tweet?text='
                 + `I'm literally ${personality.name}`
