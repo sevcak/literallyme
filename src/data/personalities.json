@@ -21,5 +21,41 @@
       "title": "Silent Hill 2",
       "link": "https://silenthill.fandom.com/wiki/Silent_Hill_2"
     }
+  },
+  {
+    "name": "Dante",
+    "link": "https://devilmaycry.fandom.com/wiki/Dante",
+    "img": "https://static.wikia.nocookie.net/devilmaycry/images/3/3f/Dante_DMC3.png",
+    "from": {
+      "title": "Devil May Cry",
+      "link": "https://en.wikipedia.org/wiki/Devil_May_Cry"
+    }
+  },
+  {
+    "name": "Rick Grimes",
+    "link": "https://walkingdead.fandom.com/wiki/Rick_Grimes_(TV_Series)",
+    "img": "https://static.wikia.nocookie.net/walkingdead/images/9/9f/Season_seven_rick_grimes.png",
+    "from": {
+      "title": "AMC's The Walking Dead",
+      "link": "https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)"
+    }
+  },
+  {
+    "name": "Daryl Dixon",
+    "link": "https://walkingdead.fandom.com/wiki/Daryl_Dixon_(TV_Series)",
+    "img": "https://static.wikia.nocookie.net/walkingdead/images/8/85/Season_eleven_daryl_dixon.png",
+    "from": {
+      "title": "AMC's The Walking Dead",
+      "link": "https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)"
+    }
+  },
+  {
+    "name": "Negan Smith",
+    "link": "https://walkingdead.fandom.com/wiki/Negan_Smith_(TV_Series)",
+    "img": "https://static.wikia.nocookie.net/walkingdead/images/8/8f/Season_eleven_negan_smith.png",
+    "from": {
+      "title": "AMC's The Walking Dead",
+      "link": "https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)"
+    }
   }
 ]

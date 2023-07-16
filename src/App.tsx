@@ -76,13 +76,13 @@ const App = () => {
               ? (
                 <img
                   src={personality.img} alt={personality.name}
-                  className='w-64 h-64 object-cover object-top rounded-lg'
+                  className='w-64 h-80 object-cover object-top rounded-lg'
                 />
               ) : (
                 <a href={personality.img} className='hover:brightness-150 hover:contrast-50'>
                 <img
                   src={personality.img} alt={personality.name}
-                  className='w-64 h-64 object-cover object-top rounded-lg'
+                  className='w-64 h-80 object-cover object-top rounded-lg'
                 />
                 </a>
               )
