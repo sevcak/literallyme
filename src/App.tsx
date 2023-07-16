@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <div
-      className='w-screen h-screen flex flex-col p-6 pt-48 items-center text-center gap-2 text-2xl'
+      className='w-screen h-screen flex flex-col p-6 md:pt-16 lg:pt-28 xl:pt-36 items-center text-center gap-2 text-2xl'
     >
       <p>this month, you're literally:</p>
       {
@@ -93,7 +93,7 @@ const App = () => {
           }
         </div>
       }
-    <p className='fixed bottom-8 text-sm'>
+    <p className='absolute bottom-8 text-sm'>
       coded by <a href="https://github.com/sevcak" className='font-bold hover:underline underline-offset-4'>sevcak</a>
     </p>
     </div>
