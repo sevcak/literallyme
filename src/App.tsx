@@ -56,7 +56,8 @@ const App = () => {
       className='
         w-screen min-h-screen p-6 pt-10 2xl:pt-16 3xl:pt-20 4xl:pt-24
         flex flex-col items-center justify-between text-center text-2xl
-        bg-gradient-to-t from-stone-200 to-40% overflow-hidden
+        bg-gradient-to-t from-stone-200 to-stone-50 to-40% overflow-hidden
+        dark:from-zinc-900 dark:to-zinc-950
       '
     >
       <div className='space-y-4 2xl:space-y-8'>
@@ -106,7 +107,8 @@ const App = () => {
             <a
               className='
                 bg-gray-300 text-sm p-2 2xl:p-4 w-fit h-fit rounded-full
-                border border-gray-300 hover:border-indigo-500 duration-75
+                border border-transparent hover:border-indigo-500 duration-75
+                dark:bg-zinc-500
               '
               href={
                 'https://twitter.com/intent/tweet?text='
@@ -121,7 +123,7 @@ const App = () => {
               <img className='w-4 h-4 2xl:w-8 2xl:h-8' src="./assets/twitter.svg" alt="Tweet" />
             </a>
             <button
-              className='bg-gray-300 text-sm p-1 px-2'
+              className='bg-gray-300 text-sm p-1 px-2 dark:bg-zinc-500'
               onClick={() => setIsRolling(true)}
             >
               nuh uh?
